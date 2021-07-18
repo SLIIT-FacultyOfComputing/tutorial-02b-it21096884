@@ -42,3 +42,42 @@ int main()
   
    return 0;
 }
+
+//c++ using
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double salary, netSalary ;  //variable decleration
+    int etype, otHrs, otRate;
+
+    cout << "Enter Employ type :";  // getting user inputs
+    cin >> etype;
+
+    cout << "Enter Employ Salary:";
+    cin >> salary;
+
+
+    cout << "Enter others :";
+    cin >> otHrs ;
+
+    switch (etype) {
+
+    case 1: otRate = 1000 ;
+            break;
+
+    case 2: otRate = 1500;
+            break;
+
+    case 3: otRate = 1700;
+            break;
+    }
+
+    netSalary = salary + otHrs * otRate;
+    cout << "Net salary is :" << netSalary << endl;
+
+    return 0;
+
+
+}
